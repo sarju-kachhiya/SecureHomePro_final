@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Home Pro</title>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/theme-blog.css">
+    <link rel="stylesheet" href="assets/css/theme-elements.css">
+    <link rel="stylesheet" href="assets/css/theme-shop.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6RZ9h13p2D+9J+QOGsFOhQ9S25Hq/90oegAU7mKUQ9Q6OYS/16J4l/02gk6v0G8L5pAWyq"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna+Guides&display=swap"
+        rel="stylesheet">
+    <style>
+        /* fonts.css */
+        @import url('assets/Font/Jost-Black.ttf');
+        @import url('assets/Font/Jost-BlackItalic.ttf');
+        @import url('assets/Font/Jost-Bold.ttf');
+        @import url('assets/Font/Jost-BoldItalic.ttf');
+        @import url('assets/Font/Jost-ExtraBold.ttf');
+        @import url('assets/Font/Jost-ExtraBoldItalic.ttf');
+        @import url('assets/Font/Jost-ExtraLight.ttf');
+        @import url('assets/Font/Jost-ExtraLightItalic.ttf');
+        @import url('assets/Font/Jost-Italic.ttf');
+        @import url('assets/Font/Jost-Light.ttf');
+        @import url('assets/Font/Jost-LightItalic.ttf');
+        @import url('assets/Font/Jost-Medium.ttf');
+        @import url('assets/Font/Jost-MediumItalic.ttf');
+        @import url('assets/Font/Jost-Regular.ttf');
+        @import url('assets/Font/Jost-SemiBold.ttf');
+        @import url('assets/Font/Jost-SemiBoldItalic.ttf');
+        @import url('assets/Font/Jost-Thin.ttf');
+        @import url('assets/Font/Jost-ThinItalic.ttf');
+        @import url('assets/Font/Jost-Black.ttf');
+
+        /* fonts.css */
+        @font-face {
+            font-family: 'Jost-Black';
+            src: url('assets/font/Jost-Black.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-BlackItalic';
+            src: url('assets/font/Jost-BlackItalic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-Bold';
+            src: url('assets/font/Jost-Bold.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-BoldItalic';
+            src: url('assets/font/Jost-BoldItalic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-ExtraBold';
+            src: url('assets/font/Jost-ExtraBold.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-ExtraBoldItalic';
+            src: url('assets/font/Jost-ExtraBoldItalic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-ExtraLight';
+            src: url('assets/font/Jost-ExtraLight.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-ExtraLightItalic';
+            src: url('assets/font/Jost-ExtraLightItalic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-Italic';
+            src: url('assets/font/Jost-Italic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-Light';
+            src: url('assets/font/Jost-Light.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-LightItalic';
+            src: url('assets/font/Jost-LightItalic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-Medium';
+            src: url('assets/font/Jost-Medium.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-MediumItalic';
+            src: url('assets/font/Jost-MediumItalic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-Regular';
+            src: url('assets/font/Jost-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-SemiBold';
+            src: url('assets/font/Jost-SemiBold.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-SemiBoldItalic';
+            src: url('assets/font/Jost-SemiBoldItalic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-Thin';
+            src: url('assets/font/Jost-Thin.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-ThinItalic';
+            src: url('assets/font/Jost-ThinItalic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Jost-Black';
+            src: url('assets/font/Jost-Black.ttf');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Jost';
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 40px 100px;
+            /* Added equal padding on left and right */
+            border-top: 1px solid #ddd;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .footer-about,
+        .footer-links,
+        .footer-contact {
+            flex: 1 1 200px;
+        }
+
+        .footer-logo {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .footer-about p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            /* Slightly increased margin */
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-socials a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            padding: 8px;
+            text-align: center;
+            width: 36px;
+            height: 36px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-links h3,
+        .footer-contact h3 {
+
+            font-weight: 700;
+            margin-bottom: 20px;
+            /* Added gap above Service and Legal */
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #777;
+        }
+
+        .footer-links li:hover {
+            text-decoration: none;
+            color: #fe6e20;
+        }
+
+        .footer-contact p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* Responsive View */
+        @media (max-width: 768px) {
+            footer {
+                padding: 20px;
+                /* Adjust padding for mobile */
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-socials {
+                justify-content: center;
+            }
+        }
+
+        .drk {
+            background-color: #ddd;
+        }
+
+
+
+
+        .para {
+            margin: 60px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links .li:hover {
+            color: #fe6e20;
+            text-underline-offset: 10px;
+
+        }
+
+        .card {
+            width: 400px;
+            margin: 30px;
+            margin-left: 550px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            background-color: #d3d3d3;
+            /* Placeholder for the image */
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: #ff9900;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .card-content p {
+            color: #6c757d;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .card-actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #ffffff;
+        }
+
+        .card-actions button {
+            width: 48%;
+            padding: 10px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cancel {
+            background-color: #4b3f72;
+            color: #ffffff;
+        }
+
+        .cancel:hover {
+            background-color: #362b53;
+            color: red;
+        }
+
+        .accept {
+            background-color: #ffa500;
+            color: #ffffff;
+        }
+
+        .accept:hover {
+            background-color: #4b3f72;
+            color: greenyellow;
+        }
+
+        @media (max-width: 991px) {
+
+            .card {
+                margin-left: 300px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+
+            .card {
+                margin-left: 400px;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .card {
+                width: 350px;
+                margin-left: 40px;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .card {
+                width: 200px;
+                margin: 20px;
+                margin-left: 50px;
+
+            }
+
+        }
+
+
+
+        @media (max-width: 375px) {
+            .card {
+                width: 200px;
+                margin: 20px;
+                margin-left: 100px;
+
+            }
+        }
+
+        @media (max-width: 320px) {
+            .card {
+                width: 200px;
+                margin: 20px;
+                margin-left: 60px;
+
+            }
+        }
+
+        .hedtxt {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #F9F9F9;">
+    <header id="header"
+        data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}"
+        style="height: 100.8px; background-color: #fff;">
+        <div class="header-body header-body-bottom-border border-top-0 h-auto">
+            <div class="header-container container p-static" style="height: 100px;">
+                <div class="header-row">
+                    <div class="header-column">
+                        <div class="header-row ">
+                            <div class="header-logo" style="width: 150px; height: 68px;">
+                                <a href="https://www.securehomepro.com/home">
+                                    <img src="assets/img/demos/business-consulting-5/logo.png" class="img-fluid"
+                                        style="margin-left: 50px;" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-column justify-content-end">
+                        <div class="header-row">
+                            <div
+                                class="header-nav header-nav-line header-nav-bottom-line header-nav-bottom-line-effect-1">
+                                <div
+                                    class="header-nav-main header-nav-main-text-capitalize header-nav-main-square header-nav-main-arrows header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hedtxt">
+        <h3><b>We've handpicked the best deals exclusively for you!</b></h3>
+    </div>
+    <div class="card">
+        <img src="assets/img/offers/6.jpg" alt="Placeholder Image">
+        <div class="card-content">
+            <h3>Buy 3 Windows, Get 1 Free!</h3>
+            <p>Upgrade your home’s look and insulation. Buy three replacement windows and get the fourth one
+                absolutely free.
+            </p>
+        </div>
+        <div class="card-actions">
+            <button onclick="navigateToFile('offer4.html')" class="cancel">✖</button>
+            <button onclick="navigateToFile('offer4.html')" class="accept">✔</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="assets/img/logo.png" alt="Secure Home Pro Logo" class="footer-logo">
+                <p style="color: #777;">
+                    Hello and Welcome to Secure Home Pro! We’re dedicated to the idea that your home should adapt to
+                    you.
+                    At Secure Home Pro, our goal is to offer personalized solutions that improve your living space,
+                    making
+                    it more functional, comfortable, and tailored to your lifestyle.
+                </p>
+                <div class="footer-socials">
+                    <a href="#"><span class="icon">f</span></a>
+                    <a href="#"><span class="icon">⎑</span></a>
+                    <a href="#"><span class="icon">in</span></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h5 style="text-decoration: none;">Service</h5>
+                <ul>
+                    <a href="homesecurity.html">
+                        <li>Home Security</li>
+                    </a>
+                    <a href="roofing.html">
+                        <li>Roofing</li>
+                    </a>
+                    <a href="windows.html">
+                        <li>Windows</li>
+                    </a>
+                    <a href="sliding.html">
+                        <li>Sliding</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>Legal</h5>
+                <ul>
+                    <a href="privacy.html">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="terms.html">
+                        <li>Terms & Conditions</li>
+                    </a>
+                    <a href="unsubscribe.html">
+                        <li>Unsubscribe</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h5>Contact</h5>
+                <a href="mailto:-securehomepro@gmail.com">securehomepro@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyrights 2021 securehomepro.com all rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function navigateToFile(filePath) {
+            // Create a hidden anchor element
+            const link = document.createElement('a');
+            link.href = filePath;
+
+            // Trigger a click on the hidden link
+            link.click();
+        }
+    </script>
+    <script type="text/plain" src="assets/vendor/plugins/js/plugins.min.js"></script>
+    <script type="text/plain" src="assets/js/theme.js"></script>
+    <script type="text/plain" src="assets/js/views/view.contact.js"></script>
+    <script type="text/plain" src="assets/js/demos/demo-business-consulting-5.js"></script>
+    <script type="text/plain" src="assets/js/custom.js"></script>
+    <script type="text/plain" src="assets/js/theme.init.js"></script><a class="scroll-to-top hidden-mobile" href="#"
+        aria-label="Scroll To Top"><i class="fas fa-chevron-up"></i></a>
+    <script type="text/plain" src="assets/js/jquery.validate.min.js"></script>
+    <script type="text/plain" src="assets/js/additional-methods.min.js"></script>
+
+
+    <script data-savepage-type="" type="text/plain" src="assets/js/home.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6ZYgfuA2Aa2WRtQvZVd0q3ZLSDk2cJ4sNzVg/MgIQkqwl+l8uaOCrpzi+Y2Jjbl"
+    crossorigin="anonymous"></script>
+
+</html>
